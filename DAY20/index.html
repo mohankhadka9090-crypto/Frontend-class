@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohan Khadka Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f1f1f1;
+}
+
+/* Layout */
+.container{
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:280px;
+    min-height:100vh;
+    background:#fff;
+    padding:20px;
+    position:fixed;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:8px;
+    display:block;
+    margin-bottom:20px;
+}
+
+.sidebar h2{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.sidebar p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    padding:12px 0;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    color:#009688;
+}
+
+.sidebar i{
+    margin-right:10px;
+}
+
+.social{
+    margin-top:30px;
+}
+
+.social i{
+    font-size:22px;
+    margin-right:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.social i:hover{
+    color:#009688;
+}
+
+/* Main Content */
+.content{
+    margin-left:300px;
+    padding:40px;
+    width:100%;
+}
+
+.content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.filter{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.filter button{
+    border:none;
+    padding:10px 20px;
+    background:#fff;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.filter .active{
+    background:#000;
+    color:#fff;
+}
+
+.line{
+    height:3px;
+    background:#ddd;
+    margin-bottom:25px;
+}
+
+/* Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    transition:.3s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        min-height:auto;
+    }
+
+    .content{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .content h1{
+        font-size:40px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <img src="Image May 30,.png" alt="Profile">
+
+        <h2>PORTFOLIO</h2>
+
+        <p>Template by Mohan Khadka</p>
+
+        <a href="#"><i class="fas fa-th-large"></i> Portfolio</a>
+        <a href="#"><i class="fas fa-user"></i> About</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <h1>My Portfolio</h1>
+
+        <div class="filter">
+            <span>Filter:</span>
+            <button class="active">ALL</button>
+            <button>Design</button>
+            <button>Photos</button>
+            <button>Art</button>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400?1">
+                <div class="card-content">
+                    <h3>Mountain View</h3>
+                    <p>
+                        Stunning mountain landscapes captured
+                        through professional photography and
+                        creative visual storytelling techniques
+                        showcasing the beauty of nature and
+                        breathtaking outdoor environments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400?2">
+                <div class="card-content">
+                    <h3>Nature Art</h3>
+                    <p>
+                        Nature inspired artwork designed with
+                        creativity and imagination to create
+                        visually appealing compositions that
+                        connect audiences with beauty and
+                        artistic expression in unique ways.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400?3">
+                <div class="card-content">
+                    <h3>Photography</h3>
+                    <p>
+                        Professional photography projects focused
+                        on composition lighting and visual balance
+                        to produce high quality images that tell
+                        meaningful stories and engage viewers
+                        across multiple creative platforms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400?4">
+                <div class="card-content">
+                    <h3>Creative Work</h3>
+                    <p>
+                        Innovative creative concepts developed
+                        using modern design principles and
+                        practical solutions to enhance digital
+                        experiences while maintaining strong
+                        visual communication and user appeal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400?5">
+                <div class="card-content">
+                    <h3>Brand Design</h3>
+                    <p>
+                        Branding and identity projects including
+                        logos marketing materials and visual
+                        systems that strengthen recognition and
+                        create lasting impressions for businesses
+                        and professional organizations worldwide.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400?6">
+                <div class="card-content">
+                    <h3>Web Development</h3>
+                    <p>
+                        Responsive websites and web applications
+                        built with modern technologies ensuring
+                        fast performance excellent accessibility
+                        and seamless user experiences across all
+                        devices and screen resolutions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

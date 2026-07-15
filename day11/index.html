@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Corrected Table Layout</title>
+<style>
+  /* Combined and cleaned up styles */
+  .card {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Remove background image if you want a clean view, or keep it as below */
+    background-image: url('image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  td, th {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    /* High contrast green text color from your sample */
+    color: rgb(52, 223, 9); 
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>HEADING</h1>
+  <table>
+    <!-- First Row: Headers -->
+    <tr>
+      <th>SN</th>
+      <th colspan="2">Name of Product</th>
+    </tr>
+    
+    <!-- Second Row: First set of data items -->
+    <tr>
+      <td rowspan="2">1</td>
+      <td>copy</td>
+      <td>pen</td>
+    </tr>
+    
+    <!-- Third Row: Second set of data items shifted by the rowspan -->
+    <tr>
+      <td>pencil</td>
+      <td>Book</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
